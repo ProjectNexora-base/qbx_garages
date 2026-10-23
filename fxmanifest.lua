@@ -4,7 +4,7 @@ game 'gta5'
 name 'qbx_garages'
 description 'Garage system for Qbox'
 repository 'https://github.com/Qbox-project/qbx_garages'
-version '1.1.4'
+version '1.1.5'
 
 ox_lib 'locale'
 
@@ -20,6 +20,7 @@ client_scripts {
 }
 
 server_scripts {
+	'server/pn-lib-config.lua',
     '@oxmysql/lib/MySQL.lua',
     'server/default-calculate-impound-fee.lua',
     'server/main.lua',
